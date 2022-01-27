@@ -1,0 +1,10 @@
+.login-footer {
+  color: var(--gray-focus);
+  margin-top: 6rem;
+  font-size: var(--font-small);
+  @media screen and (min-width: $bp-desk-lg) {
+    margin: 0;
+    position: absolute;
+    bottom: 5%;
+  }
+}

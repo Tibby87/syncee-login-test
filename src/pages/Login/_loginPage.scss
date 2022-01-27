@@ -1,0 +1,11 @@
+.login-page {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 47% 53%;
+  @media screen and (max-width: $bp-tab--land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: $bp-tab--port) {
+    grid-template-columns: 1fr;
+  }
+}

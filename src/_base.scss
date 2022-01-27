@@ -1,0 +1,67 @@
+/* Global Reset */
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+/* Body styles*/
+body {
+  background-color: #d7dafd;
+  padding-block: 4rem;
+  position: relative;
+
+  @media screen and (max-width: $bp-tab--port) {
+    padding: 2rem;
+  }
+
+  @media screen and (max-width: $bp-tab--sm) {
+    padding: 1.8rem;
+  }
+  @media screen and (max-width: $bp-phone) {
+    padding: 0;
+  }
+}
+
+// General elements styles
+button {
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+button:focus,
+input:focus {
+  outline: none;
+  outline: 2px solid var(--gray-focus);
+}
+
+label {
+  font-size: var(--font-small);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Utility Classes */
+.container {
+  width: 90%;
+  max-width: $bp-desk-lg;
+  margin: auto;
+  @media screen and (max-width: $bp-tab--port) {
+    width: 100%;
+  }
+}

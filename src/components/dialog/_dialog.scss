@@ -1,0 +1,19 @@
+.dialog-box {
+  font-size: var(--font-small);
+  line-height: 1.8;
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow: scroll;
+  z-index: 99;
+}
+
+.btn-close {
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+  background-color: lightcoral;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}

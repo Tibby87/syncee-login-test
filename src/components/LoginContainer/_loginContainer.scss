@@ -1,0 +1,15 @@
+.login-container {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  padding: 3rem 0 2rem;
+  gap: 2rem;
+  background-color: #fff;
+
+  @media screen and (max-width: $bp-tab--port) {
+    width: 60%;
+  }
+  @media screen and (max-width: $bp-phone) {
+    width: 70%;
+  }
+}

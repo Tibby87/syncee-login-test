@@ -1,0 +1,13 @@
+.separator {
+  color: var(--gray-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-block: 1.8rem;
+  &::after,
+  &::before {
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration: line-through;
+  }
+}
