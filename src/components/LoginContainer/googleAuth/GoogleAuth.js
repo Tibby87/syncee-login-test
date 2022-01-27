@@ -8,13 +8,8 @@ function GoogleAuth() {
   const { setProfile } = useContext(LoginContext);
   // Handle response from google auth request
   const responseGoogle = async (response) => {
-    try {
-      await response;
-      if (response.profileObj)
-        setProfile(JSON.stringify(response.profileObj, null, 2));
-    } catch (error) {
-      console.error(error);
-    }
+    if (response.profileObj)
+      setProfile(JSON.stringify(response.profileObj, null, 2));
   };
 
   return (
